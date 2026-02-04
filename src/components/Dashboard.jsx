@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { AppBar, Toolbar, Typography, Drawer, IconButton, Box, Grid, Card, CardContent, useMediaQuery, useTheme } from '@mui/material'
-import { Menu as MenuIcon, Dashboard, Settings, Analytics } from '@mui/icons-material'
+import { Menu as MenuIcon, Dashboard as DashboardIcon, Settings, Analytics } from '@mui/icons-material'
 import styled from 'styled-components'
 
 const StyledDrawer = styled(Drawer)`
@@ -42,7 +42,7 @@ const Dashboard = () => {
         <Toolbar />
         <Box sx={{ p: 2 }}>
           <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-            <Dashboard sx={{ mr: 1 }} />
+            <DashboardIcon sx={{ mr: 1 }} />
             <Typography>Overview</Typography>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
